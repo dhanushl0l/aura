@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir Pillow
 
-COPY server.py .
+COPY main.py .
 
 RUN mkdir -p /music
 
