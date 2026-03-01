@@ -1,0 +1,11 @@
+services:
+  aura:
+    build: .
+    ports:
+      - "8765:8765"
+    volumes:
+      - ./music:/music
+    environment:
+      - PORT=8765
+      - MUSIC_DIR=/music
+    restart: unless-stopped
